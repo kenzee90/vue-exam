@@ -1,7 +1,8 @@
 <template>
-  <div class="flex justify-center align-center">
-    
-  <v-card v-if="repo" variant="outlined" class="mx-auto my-20" max-width="400">
+  <v-container>
+    <v-row align="center" justify="center" style="height: 100vh;" dense>
+      <v-col cols="12" lg="6" md="8">
+    <v-card v-if="repo" variant="outlined" class="mx-auto my-20" max-width="400">
     <v-card-title class="max-auto">{{ repo.name }}</v-card-title>
     <v-card-text>
       <p>{{ repo.description }}</p>
@@ -15,7 +16,12 @@
     </v-card-actions>
   </v-card>
   <v-alert v-else type="info">No repository selected.</v-alert>
-</div>
+</v-col>
+</v-row>
+  </v-container>
+    
+ 
+
 </template>
 
 <script>
