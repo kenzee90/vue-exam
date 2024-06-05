@@ -64,7 +64,7 @@ const repos = ref([]);
 const router = useRouter(); // Inject the router instance
 const searchQuery = ref("");
 const currentPage = ref(1);
-const perPage = ref(6); // Adjust per page count as needed
+const perPage = ref(4); // Adjust per page count as needed
 
 const getRepos = async () => {
   try {
